@@ -1,0 +1,164 @@
+2024-10-11 23:12:29 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: seCrawler)
+2024-10-11 23:12:29 [scrapy.utils.log] INFO: Versions: lxml 4.9.4.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 24.3.0, Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.3.0 (OpenSSL 3.1.4 24 Oct 2023), cryptography 41.0.5, Platform Windows-10-10.0.22621-SP0
+2024-10-11 23:12:29 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-10-11 23:12:29 [py.warnings] WARNING: C:\Users\21733\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-10-11 23:12:29 [scrapy.extensions.telnet] INFO: Telnet Password: a25c1d71c9560f9d
+2024-10-11 23:12:30 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-10-11 23:12:30 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'seCrawler',
+ 'CONCURRENT_REQUESTS': 2,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'CONCURRENT_REQUESTS_PER_IP': 1,
+ 'COOKIES_ENABLED': False,
+ 'DEPTH_LIMIT': 1,
+ 'DOWNLOAD_DELAY': 10,
+ 'DOWNLOAD_TIMEOUT': 15,
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'seCrawler.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['seCrawler.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, '
+               'like Gecko) Chrome/27.0.1453.93 Safari/537.36'}
+2024-10-11 23:12:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'seCrawler.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-10-11 23:12:30 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-10-11 23:12:30 [scrapy.middleware] INFO: Enabled item pipelines:
+['seCrawler.pipelines.SespiderPipeline']
+2024-10-11 23:12:30 [scrapy.core.engine] INFO: Spider opened
+2024-10-11 23:12:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-10-11 23:12:30 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-10-11 23:12:30 [root] INFO: 使用用户代理: Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.1.7) Gecko/20091221 Firefox/3.5.7 (.NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)
+2024-10-11 23:12:30 [root] INFO: 使用用户代理: Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 GTB5 (.NET CLR 3.5.30729)
+2024-10-11 23:12:31 [root] INFO: 使用用户代理: Opera/9.80 (X11; U; Linux i686; en-US; rv:1.9.2.3) Presto/2.2.15 Version/10.10
+2024-10-11 23:12:31 [keywordSpider] INFO: 正在解析 URL: http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=0，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:12:31 [keywordSpider] WARNING: 未能从 http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=0 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:12:31 [root] INFO: 使用用户代理: Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2.4) Gecko/20100527 Firefox/3.6.4
+2024-10-11 23:12:31 [keywordSpider] INFO: 正在解析 URL: http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=20，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:12:31 [keywordSpider] WARNING: 未能从 http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=20 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:12:39 [root] INFO: 使用用户代理: Mozilla/5.0 (Windows; U; Windows NT 6.1; et; rv:1.9.1.9) Gecko/20100315 Firefox/3.5.9
+2024-10-11 23:12:39 [keywordSpider] INFO: 正在解析 URL: http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=10，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:12:39 [keywordSpider] WARNING: 未能从 http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=10 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:12:45 [root] INFO: 使用用户代理: Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-TW; rv:1.9.1.8) Gecko/20100202 Firefox/3.5.8 GTB6
+2024-10-11 23:12:45 [keywordSpider] INFO: 正在解析 URL: http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=30，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:12:45 [keywordSpider] WARNING: 未能从 http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=30 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:12:58 [root] INFO: 使用用户代理: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; ko-kr) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16
+2024-10-11 23:12:58 [keywordSpider] INFO: 正在解析 URL: http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=40，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:12:58 [keywordSpider] WARNING: 未能从 http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=40 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:12:58 [keywordSpider] WARNING: 关键词 'site:pan.baidu.com 数字食品及农产品加工' 已达到最大失败次数。
+2024-10-11 23:13:11 [root] INFO: 使用用户代理: Mozilla/5.0 (Windows; Windows NT 5.1; en-US; rv:1.9.2a1pre) Gecko/20090402 Firefox/3.6a1pre
+2024-10-11 23:13:11 [keywordSpider] INFO: 正在解析 URL: http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=50，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:13:11 [keywordSpider] WARNING: 未能从 http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=50 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:13:11 [keywordSpider] WARNING: 关键词 'site:pan.baidu.com 数字食品及农产品加工' 已达到最大失败次数。
+2024-10-11 23:13:25 [root] INFO: 使用用户代理: Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.8) Gecko/20100318 Gentoo Firefox/3.5.8
+2024-10-11 23:13:25 [keywordSpider] INFO: 正在解析 URL: http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=60，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:13:25 [keywordSpider] WARNING: 未能从 http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=60 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:13:25 [keywordSpider] WARNING: 关键词 'site:pan.baidu.com 数字食品及农产品加工' 已达到最大失败次数。
+2024-10-11 23:13:30 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 7 pages/min), scraped 0 items (at 0 items/min)
+2024-10-11 23:13:38 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2024-10-11 23:13:38 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2024-10-11 23:13:39 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2024-10-11 23:14:26 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: seCrawler)
+2024-10-11 23:14:26 [scrapy.utils.log] INFO: Versions: lxml 4.9.4.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 24.3.0, Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.3.0 (OpenSSL 3.1.4 24 Oct 2023), cryptography 41.0.5, Platform Windows-10-10.0.22621-SP0
+2024-10-11 23:14:26 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-10-11 23:14:26 [py.warnings] WARNING: C:\Users\21733\AppData\Local\Programs\Python\Python38\lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-10-11 23:14:26 [scrapy.extensions.telnet] INFO: Telnet Password: b069654552cbb134
+2024-10-11 23:14:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-10-11 23:14:26 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'seCrawler',
+ 'CONCURRENT_REQUESTS': 2,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'CONCURRENT_REQUESTS_PER_IP': 1,
+ 'COOKIES_ENABLED': False,
+ 'DEPTH_LIMIT': 1,
+ 'DOWNLOAD_DELAY': 10,
+ 'DOWNLOAD_TIMEOUT': 15,
+ 'LOG_FILE': 'scrapy.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'seCrawler.spiders',
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['seCrawler.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, '
+               'like Gecko) Chrome/27.0.1453.93 Safari/537.36'}
+2024-10-11 23:14:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'seCrawler.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-10-11 23:14:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-10-11 23:14:26 [scrapy.middleware] INFO: Enabled item pipelines:
+['seCrawler.pipelines.SespiderPipeline']
+2024-10-11 23:14:26 [scrapy.core.engine] INFO: Spider opened
+2024-10-11 23:14:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-10-11 23:14:26 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-10-11 23:14:26 [root] INFO: 使用用户代理: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; ja-jp) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27
+2024-10-11 23:14:26 [root] INFO: 使用用户代理: Mozilla/5.0 (Windows; U; Windows NT 5.1; pt-BR; rv:1.9.1.11) Gecko/20100701 Firefox/3.5.11 ( .NET CLR 3.5.30729)
+2024-10-11 23:14:27 [root] INFO: 使用用户代理: Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE) AppleWebKit/532+ (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10
+2024-10-11 23:14:27 [keywordSpider] INFO: 正在解析 URL: http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=0，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:14:27 [keywordSpider] WARNING: 未能从 http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=0 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:14:28 [root] INFO: 使用用户代理: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1b4) Gecko/20090423 Firefox/3.5b4 GTB5
+2024-10-11 23:14:28 [keywordSpider] INFO: 正在解析 URL: http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=20，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:14:28 [keywordSpider] WARNING: 未能从 http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=20 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:14:39 [root] INFO: 使用用户代理: Mozilla/5.0 (X11; U; Linux x86_64; ru; rv:1.9.2.11) Gecko/20101028 CentOS/3.6-2.el5.centos Firefox/3.6.11
+2024-10-11 23:14:39 [keywordSpider] INFO: 正在解析 URL: http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=30，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:14:39 [keywordSpider] WARNING: 未能从 http://www.baidu.com/s?wd=site:pan.baidu.com%20%E6%95%B0%E5%AD%97%E9%A3%9F%E5%93%81%E5%8F%8A%E5%86%9C%E4%BA%A7%E5%93%81%E5%8A%A0%E5%B7%A5&pn=30 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:14:41 [root] INFO: 使用用户代理: Mozilla/5.0 (Windows; U; Windows NT 5.1; it-IT) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4
+2024-10-11 23:14:48 [root] INFO: 使用用户代理: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5; en-US) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/9.0.597.0 Safari/534.13
+2024-10-11 23:14:55 [root] INFO: 使用用户代理: Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.12) Gecko/20101102 Firefox/3.6.12
+2024-10-11 23:14:56 [keywordSpider] INFO: 正在解析 URL: https://wappass.baidu.com/static/captcha/tuxing_v2.html?&logid=10875343132660402048&ak=c27bbc89afca0463650ac9bde68ebe06&backurl=https%3A%2F%2Fwww.baidu.com%2Fs%3Fwd%3Dsite%3Apan.baidu.com%2520%25E6%2595%25B0%25E5%25AD%2597%25E9%25A3%259F%25E5%2593%2581%25E5%258F%258A%25E5%2586%259C%25E4%25BA%25A7%25E5%2593%2581%25E5%258A%25A0%25E5%25B7%25A5%26pn%3D10&ext=x9G9QDmMXq%2FNo87gjGO0P%2BRnChiqdS2mL2a4BuDKCyuxS4CEhQa12Q7nS%2FbwHL39g1T9i%2F9aWxTqDk%2BHyX%2BPs8wRvtUqlmSJA8NVGMFz%2BFdIIB7URDciwb4Wfa7oJDxfu4VvGFPlp15wo%2BE5UdUXTw%3D%3D&signature=edd700d97b7cb6427ca2b783125f25e2&timestamp=1728659682，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:14:56 [keywordSpider] WARNING: 未能从 https://wappass.baidu.com/static/captcha/tuxing_v2.html?&logid=10875343132660402048&ak=c27bbc89afca0463650ac9bde68ebe06&backurl=https%3A%2F%2Fwww.baidu.com%2Fs%3Fwd%3Dsite%3Apan.baidu.com%2520%25E6%2595%25B0%25E5%25AD%2597%25E9%25A3%259F%25E5%2593%2581%25E5%258F%258A%25E5%2586%259C%25E4%25BA%25A7%25E5%2593%2581%25E5%258A%25A0%25E5%25B7%25A5%26pn%3D10&ext=x9G9QDmMXq%2FNo87gjGO0P%2BRnChiqdS2mL2a4BuDKCyuxS4CEhQa12Q7nS%2FbwHL39g1T9i%2F9aWxTqDk%2BHyX%2BPs8wRvtUqlmSJA8NVGMFz%2BFdIIB7URDciwb4Wfa7oJDxfu4VvGFPlp15wo%2BE5UdUXTw%3D%3D&signature=edd700d97b7cb6427ca2b783125f25e2&timestamp=1728659682 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:15:00 [root] INFO: 使用用户代理: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.7) Gecko/20100726 CentOS/3.6-3.el5.centos Firefox/3.6.7
+2024-10-11 23:15:00 [keywordSpider] INFO: 正在解析 URL: https://wappass.baidu.com/static/captcha/tuxing_v2.html?&logid=11187390884895588031&ak=c27bbc89afca0463650ac9bde68ebe06&backurl=https%3A%2F%2Fwww.baidu.com%2Fs%3Fwd%3Dsite%3Apan.baidu.com%2520%25E6%2595%25B0%25E5%25AD%2597%25E9%25A3%259F%25E5%2593%2581%25E5%258F%258A%25E5%2586%259C%25E4%25BA%25A7%25E5%2593%2581%25E5%258A%25A0%25E5%25B7%25A5%26pn%3D40&ext=x9G9QDmMXq%2FNo87gjGO0P%2BRnChiqdS2mL2a4BuDKCytWkhrGqVqihBVl6ZY8QtPHg1T9i%2F9aWxTqDk%2BHyX%2BPsxd9zYpnZSXhasV0erOpTbZIIB7URDciwb4Wfa7oJDxfu4VvGFPlp15wo%2BE5UdUXTw%3D%3D&signature=484e5a267a8c08461daf1fa7fdd17dc8&timestamp=1728659689，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:15:00 [keywordSpider] WARNING: 未能从 https://wappass.baidu.com/static/captcha/tuxing_v2.html?&logid=11187390884895588031&ak=c27bbc89afca0463650ac9bde68ebe06&backurl=https%3A%2F%2Fwww.baidu.com%2Fs%3Fwd%3Dsite%3Apan.baidu.com%2520%25E6%2595%25B0%25E5%25AD%2597%25E9%25A3%259F%25E5%2593%2581%25E5%258F%258A%25E5%2586%259C%25E4%25BA%25A7%25E5%2593%2581%25E5%258A%25A0%25E5%25B7%25A5%26pn%3D40&ext=x9G9QDmMXq%2FNo87gjGO0P%2BRnChiqdS2mL2a4BuDKCytWkhrGqVqihBVl6ZY8QtPHg1T9i%2F9aWxTqDk%2BHyX%2BPsxd9zYpnZSXhasV0erOpTbZIIB7URDciwb4Wfa7oJDxfu4VvGFPlp15wo%2BE5UdUXTw%3D%3D&signature=484e5a267a8c08461daf1fa7fdd17dc8&timestamp=1728659689 提取到任何结果，关键词: site:pan.baidu.com 数字食品及农产品加工
+2024-10-11 23:15:00 [keywordSpider] WARNING: 关键词 'site:pan.baidu.com 数字食品及农产品加工' 已达到最大失败次数。
+2024-10-11 23:15:14 [root] INFO: 使用用户代理: Mozilla/5.0 (Windows; U; Windows NT 5.2; zh-CN; rv:1.9.1.5) Gecko/Firefox/3.5.5
+2024-10-11 23:15:15 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2024-10-11 23:15:15 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2024-10-11 23:15:16 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
